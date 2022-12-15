@@ -1,0 +1,105 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 120%;
+  background: #222;
+  background-image: url(https://images.unsplash.com/photo-1592210454359-9043f067919b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d2VhdGhlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+}
+
+.card {
+  background: #000000d0;
+  color: #fff;
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 420px;
+  margin: 2em;
+}
+
+.card .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card .search button {
+  margin: .5em;
+  border-radius: 50%;
+  border: none;
+  height: 44px;
+  width: 44px;
+  outline: none;
+  background: #7c7c7c2b;
+  color: #fff;
+  cursor: pointer;
+}
+
+.card .search button:hover {
+  background: #fff;
+  color: black;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.card .search input.search-bar {
+  border: none;
+  outline: none;
+  padding: .4em 1em;
+  border-radius: 24px;
+  background: #7c7c7c2b;
+  color: #fff;
+  font-family: inherit;
+  font-size: 105%;
+  width: 100%;
+}
+
+.weather h1.temp {
+  margin: 0;
+  margin-bottom: 0.4em;
+}
+
+.weather .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.weather .description {
+  text-transform: capitalize;
+  margin-left: 10px;
+}
+
+.weather.loading {
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+
+.weather.loading::after {
+  visibility: visible;
+  content: "Loading.....";
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+/*# sourceMappingURL=style.css.map */
