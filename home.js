@@ -2,7 +2,7 @@ let weather = {
     apiKey: "95ff4dc501b5f718e99cc58824337cfd",
     fetchWeather: function (city) {
         fetch(
-            "http://api.openweathermap.org/data/2.5/weather?q="
+            "https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q="
          + city
          + "&unit=metric&appid=" 
          + this.apiKey
